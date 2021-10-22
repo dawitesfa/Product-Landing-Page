@@ -16,24 +16,29 @@
 
 <body>
     <header id="header">
+        <input id="menu-controller" type="checkbox">
         <div class="navigation">
             <div class="header__logo-box">
                 <img src="imgs/logo-black.png" alt="Logo" id="header-img">
             </div>
             <nav id="nav-bar">
                 <ul>
-                    <li><a href="#header" class="nav-link">Features </a></li>
-                    <li><a href="#section-video" class="nav-link">Our works</a></li>
-                    <li><a href="#section-pricing" class="nav-link">pricing </a></li>
+                    <li><label for="menu-controller"><i class="bi bi-x"></i></label></li>
+                    <li><a href="#header" class="nav-link"><label for="menu-controller">Features</label> </a></li>
+                    <li><a href="#section-video" class="nav-link"><label for="menu-controller">Our works</label></a>
+                    </li>
+                    <li><a href="#section-pricing" class="nav-link"><label for="menu-controller">pricing</label> </a>
+                    </li>
                 </ul>
             </nav>
+            <label for="menu-controller"><i class="bi bi-list"></i></label>
         </div>
         <div class="form-box">
             <h2 class="primary-heading">Best phone repair and accessories</h2>
             <form action="https://www.freecodecamp.com/email-submit" method="post" enctype="text/plain" id="form">
-                <input type="email" placeholder="Enter your email" class="input" id="email" required>
-                <!-- <input type="submit" class="input" id="submit"> -->
-                <button type="submit" class="input" id="submit">Get Started</button>
+                <input type="email" placeholder="Enter your email" class="input" id="email" name="email" required>
+                <input type="submit" class="input" id="submit" value="Get Started">
+                <!-- <button type="submit" class="input" id="submit">Get Started</button> -->
             </form>
         </div>
     </header>
@@ -75,10 +80,7 @@
     </section>
     <section class="section-video" id="section-video">
         <div class="row section-video__box">
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/nANY7myiHIY"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <iframe id="video" src="https://www.youtube.com/embed/nANY7myiHIY"></iframe>
         </div>
     </section>
     <section class="section-pricing" id="section-pricing">
